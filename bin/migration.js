@@ -139,12 +139,6 @@ function ToolboxMigration() {
     tryUnlink(path.join(__dirname, "update-electron-helper.js"));
     tryUnlink(path.join(__dirname, "gui", "index.html"));
     tryUnlink(path.join(__dirname, '..', 'node_modules', 'tera-data-parser', 'lib', 'protocol', 'stream.js'));
-    tryUnlink(path.join(__dirname, '..', 'node_modules', 'tera-client-interface', 'injector.exe'));
-    tryUnlink(path.join(__dirname, '..', 'node_modules', 'tera-client-interface', 'process-listener.js'));
-    tryUnlink(path.join(__dirname, '..', 'node_modules', 'tera-client-interface', 'process-listener-dll-injector.js'));
-    tryUnlink(path.join(__dirname, '..', 'node_modules', 'tera-client-interface', 'module.js'));
-    tryUnlink(path.join(__dirname, '..', 'node_modules', 'tera-client-interface', 'moduleManager.js'));
-    tryUnlink(path.join(__dirname, '..', 'node_modules', 'tera-client-interface', 'tera-client-interface.dll'));
     tryUnlink(path.join(__dirname, '..', 'node_modules', 'tera-client-interface', 'scanner', 'scanner_72.node'));
     tryUnlink(path.join(__dirname, '..', 'node_modules', 'tera-client-interface', 'scanner', 'scanner_75.node'));
     tryUnlink(path.join(__dirname, '..', 'node_modules', 'tera-client-interface', 'scanner', 'scanner_76.node'));
