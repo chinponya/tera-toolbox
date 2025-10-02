@@ -95,6 +95,13 @@ function _StartProxy(ModuleFolder, ProxyConfig) {
 		// Start proxy
 		proxy.run();
 		proxyRunning = true;
+
+        const { execFile } = require('child_process');
+        const launcherPath = process.env.LAUNCHER_PATH;
+		if (launcherPath) {
+        	execFile(launcherPath, []);
+		}
+
 		return true;
 	} catch (_) {
 		console.error(mui.get("loader-gui/error-cannot-start-proxy"));
